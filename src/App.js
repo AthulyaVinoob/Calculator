@@ -11,6 +11,23 @@ class App extends Component{
     }
   }
 
+  onClick = (button) =>{
+    if(button === "="){
+      this.calculate();
+    }
+    else if(button ==="C" || this.state.result==="ERROR"){
+      this.reset();
+    }
+    else if (button ==="CE"){
+      this.bkspc();
+    }
+    else{
+      this.setState({
+        result : this.state.result + button
+      })
+    }
+  };
+
   calculate = () =>{
     try{
       this.setState({
