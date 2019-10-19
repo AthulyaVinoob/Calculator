@@ -12,7 +12,9 @@ h1{
 .display p {
   font-size: 40px;
   margin: 5px;
-
+  text-align: end;
+  background-color: azure;
+  color: black;
 }
 
 .calculator {
@@ -30,4 +32,13 @@ button {
   width: 25%;
   height: 60px;
   font-size: 30px;
+}
+#backspace {
+    background-color: paleturquoise;
+}
+#clear {
+    background-color: indianred;
+}
+#equal {
+    background-color: lightgreen;
 }
