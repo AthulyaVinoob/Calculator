@@ -13,7 +13,9 @@ class App extends Component{
 
   calculate = () =>{
     try{
-      result : (eval(this.state.result) ||" ")+""
+      this.setState({
+                result: (eval(this.state.result) || "" ) + ""
+            })
     }catch(e) {
       this.setState({
         result:"ERROR"
